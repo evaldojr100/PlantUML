@@ -121,7 +121,7 @@
                     <div class="quadradao">
                         <div class="codigo container__text" style="color: aliceblue">
                                 @startuml
-                                archimate #Technology "VPN Server" as vpnServerA <<technology-device>>
+                                archimate #Technology "VPN Server" as vpnServerA technology - device>>
                                 
                                 rectangle GO #lightgreen
                                 rectangle STOP #red
@@ -130,19 +130,44 @@
                         </div>
                         <img class="imagem__diagram container__text" src="imagens/Capturar--achimate__diagram.PNG" alt="imagem representativa de um archimate diagram">
                     </div>
-            </div>
+                </div>
+            
         </section>
 
         <!-- section05 -->
         <section class="container__div--main">
             <div class="container">
-                <div class="titulo"></div>
+                <div class="titulo container__text">Object Diagram</div>
+                <div class="paragrafo__text container__text">
+                    Na Unified Modeling Language (UML),
+                     um diagrama de objetos se concentra
+                     em algum conjunto particular de objetos
+                     e atributos e os links entre essas instâncias.
+                     Um conjunto correlacionado de diagramas de objetos
+                     fornece uma visão de como se espera que uma visão arbitrária de um sistema evolua com o tempo
+                </div>
+                <div class="quadradao">
+                    <div class="codigo container__text">
+                            @startuml
+                            object Object01
+                            object Object02
+                            object Object03
+                            object Object04
+                            object Object05
+                            object Object06
+                            object Object07
+                            object Object08
+                            
+                            Object01 <|-- Object02
+                            Object03 *-- Object04
+                            Object05 o-- "4" Object06
+                            Object07 .. Object08 : some labels
+                            @enduml
+                    </div>
+                    <img class="imagem__diagram container__text" src="imagens/Capturar--object__diagram.PNG" alt="representative image of an object diagram">
+                </div>
             </div>
         </section>
-
-        
-
-
     </main>
 
     <footer class=footer>
