@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Plant UML</title>
+</head>
+<body>
+    <main>
+        <!-- section01 -->
+        <div class="container container__div--main">
+            <div class="titulo container__text">Classe Diagram</div>
+            <div class="paragrafo__text container__text">Class diagram is a static representation used in the
+                 programming area to describe the structure of a
+                 system, presenting its classes, attributes,
+                 operations and relationships between objects.</div>
+            <div class="quadradao">
+                <div class="codigo container__text">
+                        @startuml
+
+                        Class01 "1" *-- "many" Class02 : contains
+                        
+                        Class03 o-- Class04 : aggregation
+                        
+                        Class05 --> "1" Class06
+                        
+                        @enduml</div>
+
+                        <div>
+                            <img class="imagem__diagram container__text" src="imagens/Capturar--class__diagram.PNG" alt="imagem da representação do diagrama de classe">
+                        </div>
+            </div>
+        </div>
+
+        <!-- section02 -->
+        <div class="container bgc__gradiente01">
+            <div class="titulo container__text" style="color: aliceblue">Activity Diagram</div>
+            <div class="paragrafo__text container__text" style="color: aliceblue">
+                 Activity Diagram is a behavioral diagram (which
+                 specifies software behavior), and through it we can model parts of software behavior.
+                 The activity diagram graphically illustrates how the 
+                 software will work (at the micro or macro level), how it 
+                 will perform some of its parts, how the system will act in 
+                 the business reality in which it is inserted
+            </div>
+            
+            <div class="quadradao">
+                    <div class="codigo container__text" style="color: aliceblue">
+                            @startuml
+
+                            start
+
+                            if (Graphviz installed?) then (yes)
+                            :process all\ndiagrams;
+                            else (no)
+                            :process only
+                            __sequence__ and __activity__ diagrams;
+                            endif
+
+                            stop
+
+                            @enduml</div>
+    
+                            <div>
+                                <img class="imagem__diagram container__text" src="imagens/Capturar-active__diagram.PNG" alt="imagem da representação do diagrama de atividade">
+                            </div>
+            </div>
+        </div>
+
+        <!-- section03 -->
+        <div class="container container__div--main">
+            <div class="titulo container__text">Sequence Diagram</div>
+            <div class="paragrafo__text container__text">
+                    Class diagram is a static representation used in the 
+                    programmin area to describe the structure of a system,
+                    presenting its classes, attributes, operations and
+                    relationships between objects.
+            </div>
+            <div class="quadradao">
+                <div class="codigo container__text">
+                        @startuml
+                        Alice -> Bob: Authentication Request
+                        Bob --> Alice: Authentication Response
+                        
+                        Alice -> Bob: Another authentication Request
+                        Alice <-- Bob: Another authentication Response
+                        @enduml
+                </div>
+                <div>
+                    <img class="imagem__diagram container__text" src="imagens/Capturar-sequence__diagram.PNG" alt="imagem representativa de um diagrama de sequencia">
+                </div>
+            </div>
+        </div>
+
+        <!-- section4 -->
+        <div class="container container__div--main">
+            <div class="title container__text">Archimate Diagram</div>
+            <div class="paragrafo__text container__text">
+                    ArchiMate Diagram offers a visual language 
+                    to model and capture enterprise architecture.
+                    It provides a means to visualize relationships
+                    within and between different domains.
+                    These domains primarily include products/services,
+                    processes, organization, data applications and technical infrastructure
+            </div>
+            <div class="quadradao">
+                <div class="codigo container__text">
+                        @startuml
+                        archimate #Technology "VPN Server" as vpnServerA <<technology-device>>
+                        
+                        rectangle GO #lightgreen
+                        rectangle STOP #red
+                        rectangle WAIT #orange
+                        @enduml
+                </div>
+                <img class="imagem__diagram container__text" src="" alt="">
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
