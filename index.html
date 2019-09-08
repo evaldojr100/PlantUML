@@ -4,202 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <title>PlantUML</title>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Plant UML</title>
 </head>
-
 <body>
-    <header>
-
-    </header>
-
     <main>
-        <!-- section01 -->
-        <section class="container__div--main">
-            <div class="container">
-                <div class="titulo container__text">Classe Diagram</div>
-                <div class="paragrafo__text container__text">Class diagram is a static representation used in the
-                    programming area to describe the structure of a
-                    system, presenting its classes, attributes,
-                    operations and relationships between objects.</div>
-                <div class="quadradao">
-                    <div class="codigo container__text">
-                            @startuml
-
-                            Class01 "1" *-- "many" Class02 : contains
-                            
-                            Class03 o-- Class04 : aggregation
-                            
-                            Class05 --> "1" Class06
-                            
-                            @enduml</div>
-
-                            <div>
-                                <img class="imagem__diagram container__text" src="imagens/Capturar--class__diagram.PNG" alt="imagem da representação do diagrama de classe">
-                            </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- section02 -->
-        <section class="bgc__gradiente01">
-            <div class="container">
-                <div class="titulo container__text" style="color: aliceblue">Activity Diagram</div>
-                <div class="paragrafo__text container__text" style="color: aliceblue">
-                    Activity Diagram is a behavioral diagram (which
-                    specifies software behavior), and through it we can model parts of software behavior.
-                    The activity diagram graphically illustrates how the 
-                    software will work (at the micro or macro level), how it 
-                    will perform some of its parts, how the system will act in 
-                    the business reality in which it is inserted
-                </div>
-                
-                <div class="quadradao">
-                        <div class="codigo container__text" style="color: aliceblue">
-                                @startuml
-
-                                start
-
-                                if (Graphviz installed?) then (yes)
-                                :process all\ndiagrams;
-                                else (no)
-                                :process only
-                                __sequence__ and __activity__ diagrams;
-                                endif
-
-                                stop
-
-                                @enduml</div>
         
-                                
-                            <img class="imagem__diagram container__text" src="imagens/Capturar-active__diagram.PNG" alt="imagem da representação do diagrama de atividade">
-                               
+       <!-- sectio01 -->
+       <section class="">
+           <div class="container container__itens main__flexBox">
+                <div class="main__titulo">Activity Diagram
+                    <div class="main__paragrafo">
+                            Activity Diagram is a behavioral diagram (which specifies software behavior),
+                            and through it we can model parts of software behavior.
+                            The activity diagram graphically illustrates how the software will work
+                            (at the micro or macro level), how it will perform some of its parts, 
+                            how the system will act in the business reality in which it is inserted.
+                    </div>
                 </div>
-            </div>    
-        </section>
+                <div class="main__codigo">
+                        @startuml <br> <br>
 
-        <!-- section03 -->
-        <section class="container__div--main">
-            <div class="container">
-                <div class="titulo container__text">Sequence Diagram</div>
-                <div class="paragrafo__text container__text">
-                        Class diagram is a static representation used in the 
-                        programmin area to describe the structure of a system,
-                        presenting its classes, attributes, operations and
-                        relationships between objects.
+                        start
+                        
+                        if (Graphviz installed?) then (yes)
+                        :process all\ndiagrams;
+                        else (no)
+                        :process only
+                        __sequence__ and __activity__ diagrams;
+                        endif
+                        
+                        stop <br> <br>
+                        
+                        @enduml
+                        
+                        
                 </div>
-                <div class="quadradao">
-                    <div class="codigo container__text">
-                            @startuml
+               
+                <img class="main__image--diagram" src="imagens/Capturar-active__diagram.PNG " alt="representative image of an activity diagram">
+                
+        </div>
+       </section>
+
+       <!-- section02 -->
+       <section class="bgc__gradiente01">
+            <div class="container container__itens main__flexBox" style="flex-direction: row-reverse">
+                    <div class="main__titulo" style="color: aliceblue">Sequence Diagram
+                        <div class="main__paragrafo" style="color: aliceblue">
+                                Sequence Diagram a diagram used in UML,
+                                representing the sequence of processes 
+                                (more specifically, messages passed between objects) 
+                                in a computer program. Because a project can have a large 
+                                number of methods in different classes, it can be difficult to determine 
+                                the overall sequence of behavior. The sequence diagram represents this information in a simple and logical way.
+                        </div>
+                    </div>
+                    <div class="main__codigo" style="color: aliceblue">
+                            @startuml 
+                            <br> <br>
+
                             Alice -> Bob: Authentication Request
                             Bob --> Alice: Authentication Response
-                            
+
                             Alice -> Bob: Another authentication Request
-                            Alice <-- Bob: Another authentication Response
+                            Alice <-- Bob: Another authentication Response 
+                            <br> <br>
+                            
                             @enduml
                     </div>
-                    <div>
-                        <img class="imagem__diagram container__text" src="imagens/Capturar-sequence__diagram.PNG" alt="imagem representativa de um diagrama de sequencia">
-                    </div>
+                    <img class="main__image--diagram" src="imagens/Capturar-sequence__diagram.PNG" alt="representative image of an sequence diagram">
                 </div>
-            </div> 
-        </section>
+       </section>
 
-        <!-- section4 -->
-        <section class="bgc__gradiente02">
-                <div class="container">
-                    <div class="titulo container__text" style="color: aliceblue">Archimate Diagram</div>
-                    <div class="paragrafo__text container__text" style="color: aliceblue">
-                            ArchiMate Diagram offers a visual language 
-                            to model and capture enterprise architecture.
-                            It provides a means to visualize relationships
-                            within and between different domains.
-                            These domains primarily include products/services,
-                            processes, organization, data applications and technical infrastructure
-                    </div>
-                    <div class="quadradao">
-                        <div class="codigo container__text" style="color: aliceblue">
-                                @startuml
-                                archimate #Technology "VPN Server" as vpnServerA technology - device>>
-                                
-                                rectangle GO #lightgreen
-                                rectangle STOP #red
-                                rectangle WAIT #orange
-                                @enduml
+    
+       
+       <!-- section03 -->
+       <section>
+            <div class="container container__itens main__flexBox">
+                    <div class="main__titulo">Archimate Diagram
+                        <div class="main__paragrafo">
+                                ArchiMate Diagram offers a visual language to model and capture enterprise architecture.
+                                It provides a means to visualize relationships within and between different domains. 
+                                These domains primarily include products/services, processes, organization, 
+                                data applications and technical infrastructure.
                         </div>
-                        <img class="imagem__diagram container__text" src="imagens/Capturar--achimate__diagram.PNG" alt="imagem representativa de um archimate diagram">
                     </div>
-                </div>
+                    <div class="main__codigo">
+                            @startuml <br> <br>
+                            !define Junction_Or circle #black
+                            !define Junction_And circle #whitesmoke
+                            
+                            Junction_And JunctionAnd
+                            Junction_Or JunctionOr
+                            
+                            archimate #Technology "VPN Server" as vpnServerA technology-device
+                            
+                            rectangle GO #lightgreen
+                            rectangle STOP #red
+                            rectangle WAIT #orange
+                            GO -up-> JunctionOr
+                            STOP -up-> JunctionOr
+                            STOP -down-> JunctionAnd
+                            WAIT -down-> JunctionAnd <br> <br>
+                            
+                            @enduml
+                    </div>
+                    <img class="main__image--diagram" src="imagens/Capturar--achimate__diagram.PNG" alt="representative image of an activity diagram">
+            </div>
+       </section>
+
+           <!-- section04 -->
+        <section class="bgc__gradiente02">
+                        <div class="container container__itens main__flexBox" style="flex-direction: row-reverse">
+                                <div class="main__titulo" style="color: aliceblue">Class Diagram
+                                    <div class="main__paragrafo" style="color: aliceblue">
+                                                Class diagram is a static representation used in the programming 
+                                                area to describe the structure of a system, presenting its classes, 
+                                                attributes, operations and relationships between objects.
+                                    </div>
+                                </div>
+                                <div class="main__codigo" style="color: aliceblue">
+                                        @startuml 
+                                        <br> <br>
             
+                                        Class01 "1" *-- "many" Class02 : contains
+
+                                        Class03 o-- Class04 : aggregation
+                                        
+                                        Class05 --> "1" Class06
+                                        <br> <br>
+                                        
+                                        @enduml
+                                </div>
+                                <img class="main__image--diagram" src="imagens/Capturar--class__diagram.PNG" alt="representative image of an class diagram">
+                            </div>
         </section>
 
         <!-- section05 -->
-        <section class="container__div--main">
-            <div class="container">
-                <div class="titulo container__text">Object Diagram</div>
-                <div class="paragrafo__text container__text">
-                    Na Unified Modeling Language (UML),
-                     um diagrama de objetos se concentra
-                     em algum conjunto particular de objetos
-                     e atributos e os links entre essas instâncias.
-                     Um conjunto correlacionado de diagramas de objetos
-                     fornece uma visão de como se espera que uma visão arbitrária de um sistema evolua com o tempo
-                </div>
-                <div class="quadradao">
-                    <div class="codigo container__text">
-                            @startuml
-                            object Object01
-                            object Object02
-                            object Object03
-                            object Object04
-                            object Object05
-                            object Object06
-                            object Object07
-                            object Object08
-                            
-                            Object01 <|-- Object02
-                            Object03 *-- Object04
-                            Object05 o-- "4" Object06
-                            Object07 .. Object08 : some labels
-                            @enduml
-                    </div>
-                    <img class="imagem__diagram container__text" src="imagens/Capturar--object__diagram.PNG" alt="representative image of an object diagram">
-                </div>
-            </div>
-        </section>
-    </main>
+       <section>
+                <div class="container container__itens main__flexBox">
+                        <div class="main__titulo">Use case Diagram
+                            <div class="main__paragrafo">
+                                        A use case is a methodology used in system analysis to identify, 
+                                        clarify, and organize system requirements. In this context, 
+                                        the term "system" refers to something being developed or operated, 
+                                        such as a mail-order product sales and service Web site. 
+                                        Use case diagrams are employed in UML (Unified Modeling Language), 
+                                        a standard notation for the modeling of real-world objects and systems.
+                            </div>
+                        </div>
+                        <div class="main__codigo">
+                                @startuml <br> <br>
 
-    <footer class=footer>
-        <div class=footer__text>
-            <h1>See More</h1>
-        </div>
-        <div>
-            <img class="footer__logo" src="assets/Logo PlantULM VERSION FINAL.png" alt="Logo do PlantUML">
-        </div>
-        <nav class="footer__items">
-        <div class=footer__donates>
-            <div class=footer__donates--donate>
-                <img class="footer__donates--donate-img" src="assets/iconfinder_paypal_1220313.svg" alt=" Donate">
-                <span class="footer__donates--donate-text">Donate</span>
-            </div>
-            <div class=footer__donates--donate>
-                <img class="footer__donates--donate-img" style="border-radius:20px" src="assets/patreon-logo.png"
-                    alt=" Patreon">
-                <span class="footer__donates--donate-text">Patreon</span>
-            </div>
-            <div class=footer__donates--donate>
-                <img class="footer__donates--donate-img" src="assets/icon-v2_white-on-yellow_svgetag=.png"
-                    alt=" Patrons">
-                <span class="footer__donates--donate-text">Patrons</span>
-            </div>
-        </div>
-        <div class="footer__textLink">
-            <p>F.A.Q</p>
-            <p>Dedication</p>
-            <p>External Links</p>
-        </div>
-        </nav>
-    </footer>
+                                (First usecase)
+                                (Another usecase) as (UC2)  
+                                usecase UC3
+                                usecase (Last\nusecase) as UC4
+                                <br> <br>
+                                
+                                @enduml
+                        </div>
+                        <img class="main__image--diagram" src="imagens/Capturar__use_case_diagram.PNG" alt="representative image of an use case diagram">
+                </div>
+           </section>
+
+    </main>
 </body>
 </html>

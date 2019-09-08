@@ -6,143 +6,114 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+.container__itens{
+    padding: 100px 30px 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.main__flexBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-/* Header */
-
+}
 
 
 /* Main */
-.container__div--main{
-    margin-bottom: 10px;
-}
-.container__text{
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.titulo{
+
+.main__titulo{
+    
     font-family: 'Roboto' , 'sans-serif';
-    text-align: center;
     font-style: normal;
+    text-align: center;
+    float: left;
     font-weight: bold;
-    font-size: 28px;
-    padding-top: 10px;
-    line-height: 80px;
+    font-size: 42px;
+    line-height: 120px;
    
+
 }
-.paragrafo__text{
+@media(max-width: 600px){
+    .main__titulo{
+        font-size: 25px;   
+        text-align: center;
+        float: none; 
+        padding-left: 5px;
+        line-height: 100px;
+          
+    }
+}
+
+.main__paragrafo{
+    
     font-family: 'Roboto' , 'sans-serif';
     text-align: justify;
-    font-style: normal;
-    font-weight: 500;
     font-size: 20px;
-    line-height: 20px;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    
-}
-.quadradao{
-    display: flex;
-    flex-direction: column;
-}
-.codigo{
-    display: block;
-    font-family: 'Roboto' , 'sans-serif';
-    font-style: italic;
-    text-align: left;
-    font-size: 15px;
+    float: unset;
+    font-weight: normal;
     line-height: 30px;
+    max-width: 400px;
+    padding: 0 20px; 
+}
+@media(max-width: 600px){
+    .main__paragrafo{
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+
+.main__codigo{
+    font-family: 'Roboto' , 'sans-serif';
     text-align: justify;
-    
-}
-.imagem__diagram{
-    
-    max-width: 330px;
-    padding: 30px;
-    margin: 0 auto;
-    display: block;
-    
-}
-.bgc__gradiente01{
-    background: linear-gradient(180deg, #327559 0%, #3F83A2 57.81%);
-}
-.bgc__gradiente02{
-    background: linear-gradient(180deg, #3F83A2 0%,  #327559 100%);
-}
-
-.footer{
-    background: linear-gradient(180deg, #3D9771 0%, #3F83A2 80.21%);
-    display:flex;
-    flex-direction: column;
-    padding-top: 20px;
-}
-
-.footer__text{
-    font-size:35px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.footer__logo{
-    display:block;
-    width: 355px;
-    height: 325px;
-    margin: 0 auto;
-}
-.footer__donates{
-    display:block;
-    width: 300px;
-}
-
-.footer__donates--donate{
-    background-color: #FFFFFF;
-    height: 50px;
-    display:flex;
-    align-items: center;
-    align-content: center;
-    max-width: 130px;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-top: 20px;
-
-}
-.footer__donates--donate:hover{
-    background-color: rgb(197, 197, 197)
-}
-.footer__donates--donate-img{
-    display: block;
-    width: 40px;
-    margin-left: 10px;
-}
-.footer__donates--donate-text{
-    margin-left: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-weight: bold;
     font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+    max-width: 325px;   
+    padding: 0 50px;
+    margin: 30px 0;
 }
-.footer__textLink{
-    display: flex;
-    flex-direction: column;
-    color:white;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    width: 200px;
-    text-align: right;
-    align-self: flex-end;
+
+
+@media(max-width: 600px){
+    .main__codigo{
+        font-style: italic;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 17px;
+        text-align: justify;
+        padding-left: 55px;
+    }
+}
+
+.main__image--diagram{
+
+    max-height: 300px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 30px;
 
 }
-.footer__items{
-    display: flex;
-    margin-right: 10px;
-    margin-bottom: 20px;
-
+@media(max-width: 600px){
+    .main__image--diagram{
+        max-height: 250px;
+        max-width: 250px;
+        
+    }
 }
+
+
+    .bgc__gradiente01{
+        background: linear-gradient(180deg, #327559 0%, #3F83A2 57.81%);
+    }
+    .bgc__gradiente02{
+        background: linear-gradient(180deg, #3F83A2 0%,  #327559 100%);
+    }
+
+
+
+
 
