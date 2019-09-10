@@ -59,10 +59,16 @@ body{
     top: 30px;*/
     list-style-type: none;    
 }
+.menu__hmb-itens{
+    display: none;
+}
 .menu__hmb{
     position: absolute;
-    top: 30px;
+    top: 50px;
     right: 50px;
+    display: none;
+}
+.hamb>a{
     display: none;
 }
 @media(max-width: 900px){
@@ -71,6 +77,21 @@ body{
     }
     .menu__hmb{
         display: inline;
+    }
+    .logo{
+        padding: 20px 30px !important;
+    }
+    .navegacao{
+        display: block;
+    }
+    .hamb>a{
+        border-bottom: 1px solid white;
+        padding: 10px;
+        text-align: center;
+        display: block ;
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto', sans-serif;
     }
 }
 .menu__lista>a{
